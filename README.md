@@ -32,6 +32,9 @@ python Judge_Extended.py --runtests --selftest --out /tmp/x.json
 
 All **T1–T14** tests should pass.
 
+## Citation and Preprint
+- Preprint, Artifact DOI: [Zenodo DOI](https://doi.org/10.5281/zenodo.17059069)
+  
 ---
 
 Generated on: 2025-09-04 22:09:45.338071+00:00
