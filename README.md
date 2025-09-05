@@ -1,3 +1,6 @@
+거의 다 됐는데, 지금 붙여주신 버전엔 여전히 **코드블록이 안 닫힌 곳**, **한국어가 섞인 헤딩/본문**, 그리고 **헤딩/리스트 마크다운 누락**이 있어요. 아래 “Copy-Paste Ready”로 바꾸면 깔끔합니다.
+
+````markdown
 This repository contains the reproducibility artifact for Phase Wave Determinism (PWD), including code, benchmark data, and evaluation scripts.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17059069.svg)](https://doi.org/10.5281/zenodo.17059069)
@@ -8,6 +11,7 @@ This Zenodo bundle contains a **single-file judge** and **minimal data** to repr
 
 ## Quick start
 
+```bash
 python -m pip install -U numpy pandas scipy
 python Judge_Extended.py --input bench.csv \
   --ts-input dyn.csv --ts-ref-method REF --ts-delta 0.03 \
@@ -36,6 +40,7 @@ $env:PWD_SOLVER="C:\path\to\pwd_solver.exe"
 
 ### Linux / Colab
 
+```bash
 bash hero/HS1_softCoulomb_3D/run_base.sh
 bash hero/HS1_softCoulomb_3D/run_pwd.sh
 python hero/HS1_softCoulomb_3D/collect.py
@@ -58,6 +63,7 @@ python tools/verify_pwd.py --input hero/HS1_softCoulomb_3D/bench_hero.csv --boot
 
 ## Re-run tests
 
+```bash
 python Judge_Extended.py --runtests --selftest --out /tmp/x.json
 ```
 
@@ -69,6 +75,7 @@ This repository also includes a Hero Suite for large grids (e.g., 256³ / 512³)
 
 ### Requirements
 
+```bash
 python -m pip install -U numpy pandas scipy matplotlib
 ```
 
@@ -82,3 +89,13 @@ Preprint / Artifact DOI: [https://doi.org/10.5281/zenodo.17059069](https://doi.o
 ---
 
 Generated on: 2025-09-04 22:09:45.338071+00:00
+
+```
+
+이 버전은:
+- 모든 코드블록이 **올바르게 열고 닫혔고**,  
+- **영어로 통일**,  
+- 중복/혼용 섹션 제거,  
+- 헤딩/리스트 마크다운 형식 준수,  
+- DOI 배지도 정상 표시됩니다.
+```
