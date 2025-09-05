@@ -1,0 +1,65 @@
+{
+  "artifact": "PWD_artifact_v1.1",
+  "files": [
+    {
+      "file": "CITATION.cff",
+      "size_bytes": 329,
+      "sha256": "db462d3047a25fbb1890a8a2136c5b77e9507f6649fee1ecbf33eb5f96cc7b25"
+    },
+    {
+      "file": "Judge_Extended.py",
+      "size_bytes": 36441,
+      "sha256": "ed0309a0374e0c5f061a82aba6e419b5423d46e92b3d95ff4631c4da11b00e19"
+    },
+    {
+      "file": "LICENSE",
+      "size_bytes": 1056,
+      "sha256": "06dcddbb6908a0c6dd4a9e8ec822eea41d5a460a53089fecccc8a68049e99241"
+    },
+    {
+      "file": "README.md",
+      "size_bytes": 1371,
+      "sha256": "5daac369f074f449514928aa61c7df5b081c43f04e51975dd45995542207ccd6"
+    },
+    {
+      "file": "bands.csv",
+      "size_bytes": 1824,
+      "sha256": "77704355e8a0bb23bdb0e54f4c654616e59459b235049d430ad310c0d6395eff"
+    },
+    {
+      "file": "bench.csv",
+      "size_bytes": 238,
+      "sha256": "8b9bc7fb20f7e23d13301a16d11f5d6fdfc2597903f4c5f29961b192c8d047a5"
+    },
+    {
+      "file": "dyn.csv",
+      "size_bytes": 15257,
+      "sha256": "347fc105bae3ff16501999aa6de9df6ce4fa21c86070fcb3d60b00493aae5e46"
+    },
+    {
+      "file": "run_stderr.txt",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "run_stdout.txt",
+      "size_bytes": 974,
+      "sha256": "5fb62436c6e49bd5244f7fa6015b0f468d8a5e14beb3cd018af4006308fe91a4"
+    },
+    {
+      "file": "sc.csv",
+      "size_bytes": 166,
+      "sha256": "755153e6cd434be339fdafe7a606ed8a1d3a22ef2ce2d4244e76a96c1629d080"
+    },
+    {
+      "file": "summary.md",
+      "size_bytes": 786,
+      "sha256": "19a83d1b310c1978ccaf62fca1c26593e75198fc81d9f0b74a94c67a66818579"
+    },
+    {
+      "file": "verdict.json",
+      "size_bytes": 3925,
+      "sha256": "0860e3708461cb935c87a4a4301a7bf3ef206590c5c8fea2b38578f70ce225d2"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[diag] head:
+ category case_id        method  target_error  achieved_error  core_hours  peak_ram_gb
+ bonding  H2_0.7           PWD        0.0016          0.0012        0.02          0.5
+ bonding  H2_0.7     r2SCAN-D4        0.0016          0.0014        0.08          1.5
+ bonding  H2_0.7 DLPNO-CCSD(T)        0.0016          0.0013        0.12          2.5
+{
+  "r2SCAN-D4": {
+    "equivalence": {
+      "n": 1,
+      "p1": 0.0,
+      "p2": 0.0,
+      "equivalent": true,
+      "delta": 0.0005,
+      "dbar": -0.0002000000000000001
+    },
+    "core_ratio_median": 0.25,
+    "ram_ratio_median": 0.3333333333333333,
+    "pass_core": false,
+    "pass_ram": false
+  },
+  "DLPNO-CCSD(T)": {
+    "equivalence": {
+      "n": 1,
+      "p1": 0.0,
+      "p2": 0.0,
+      "equivalent": true,
+      "delta": 0.0005,
+      "dbar": -0.00010000000000000005
+    },
+    "core_ratio_median": 0.16666666666666669,
+    "ram_ratio_median": 0.2,
+    "pass_core": true,
+    "pass_ram": true
+  }
+}

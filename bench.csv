@@ -1,0 +1,4 @@
+category,case_id,system_size,method,target_error,achieved_error,core_hours,peak_ram_gb
+bonding,H2_0.7,60,PWD,0.0016,0.0012,0.02,0.5
+bonding,H2_0.7,60,r2SCAN-D4,0.0016,0.0014,0.08,1.5
+bonding,H2_0.7,60,DLPNO-CCSD(T),0.0016,0.0013,0.12,2.5

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: Phase Wave Determinism (PWD) — Reproducibility Artifact
+message: Please cite this artifact if you use these materials.
+type: software
+authors:
+  - given-names: AI-1
+    family-names: DHI
+    affiliation: DHI-AI
+repository-code: https://zenodo.org/
+license: MIT
+version: v1.1
+date-released: 2025-09-04
