@@ -15,9 +15,19 @@ python Judge_Extended.py --input bench.csv   --ts-input dyn.csv --ts-ref-method 
 ```
 ## Safe-run (OS/Colab/Windows 공통)
 
-- 실행은 OS/셸 의존 명령 대신 `tools/runner.py`가 처리합니다.  
-  → **타임아웃**, **자식 프로세스 포함 피크 RAM**, `shell=False` 안전 실행.
-- 리눅스/Colab:
+### Windows PowerShell 실행 예시
+```powershell
+$env:BASELINE_SOLVER="C:\path\to\baseline_solver.exe"
+$env:PWD_SOLVER="C:\path\to\pwd_solver.exe"
+.\hero\HS1_softCoulomb_3D\run_base.ps1
+.\hero\HS1_softCoulomb_3D\run_pwd.ps1
+
+## Safe-run (OS/Colab/Windows 공통)
+
+- Runs are handled by tools/runner.py instead of OS/shell-dependent commands.
+ → Timeout enforcement, peak RAM tracking (including child processes), and shell=False safe execution.
+- Linux/Colab:
+
   ```bash
   bash hero/HS1_softCoulomb_3D/run_base.sh
   bash hero/HS1_softCoulomb_3D/run_pwd.sh
@@ -48,7 +58,7 @@ All **T1–T14** tests should pass.
 
 ## 🚀 Hero Suite (HS1) — external “hundreds×” verification
 
-이 저장소에는 Judge(Self-test) 외에 대형 격자(예: 256³/512³)에서 **공정성·정확도(TOST)·속도(수백×)** 를 한 번에 검증할 수 있는 히어로 스위트가 포함됩니다.
+This repository also includes a Hero Suite for large grids (e.g., 256³ / 512³), enabling end-to-end verification of fairness, accuracy (TOST), and speedup (hundreds×) in a single workflow.
 
 ### Requirements
 ```bash
