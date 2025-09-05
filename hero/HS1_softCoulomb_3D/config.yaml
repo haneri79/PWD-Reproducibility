@@ -1,0 +1,32 @@
+case_id: HS1_softCoulomb_3D
+grid: {nx: 256, ny: 256, nz: 256}    # option: 512^3
+box:  {lx: 200.0, ly: 200.0, lz: 200.0}   # a.u.
+potential:
+  type: soft_coulomb_cluster
+  alpha: 0.5
+  centers:
+    - [0.0, 0.0, 0.0, 1.0]
+    - [10.0, 0.0, 0.0, 1.0]
+cap:
+  thickness_frac: 0.10
+  profile: sin2
+propagation:
+  mode: real_time
+  dt_candidates: [0.01, 0.015, 0.02]
+  order: S4_Yoshida
+  total_time: 200.0
+baseline:
+  scheme: CN_ADI
+  linsolve: cg
+  tol: 1e-10
+fairness_contract:
+  fft_lib: FFTW-3.3.10
+  threads: 32
+  gpu: false
+  offline_cost: full
+accuracy:
+  tost_delta_mha: 0.5
+  alpha: 0.05
+logging:
+  hz_energy_power: 1
+  kvlog_path: logs/
