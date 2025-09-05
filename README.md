@@ -36,6 +36,14 @@ python Judge_Extended.py --runtests --selftest --out /tmp/x.json
 
 All **T1–T14** tests should pass.
 
+## 🚀 Hero Suite (HS1) — external “hundreds×” verification
+
+이 저장소에는 Judge(Self-test) 외에 대형 격자(예: 256³/512³)에서 **공정성·정확도(TOST)·속도(수백×)** 를 한 번에 검증할 수 있는 히어로 스위트가 포함됩니다.
+
+### Requirements
+```bash
+python -m pip install -U numpy pandas scipy matplotlib
+
 ## Citation and Preprint
 
 If you use this artifact, please cite as:
