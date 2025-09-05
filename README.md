@@ -1,5 +1,7 @@
 This repository contains the reproducibility artifact for Phase Wave Determinism (PWD), including code, benchmark data, and evaluation scripts.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17059069.svg)](https://doi.org/10.5281/zenodo.17059069)
+
 # PWD Reproducibility Artifact (v1.1)
 
 This Zenodo bundle contains a **single-file judge** and **minimal data** to reproduce the benchmark,
