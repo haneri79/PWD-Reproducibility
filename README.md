@@ -37,6 +37,10 @@ python Judge_Extended.py --runtests --selftest --out /tmp/x.json
 All **T1–T14** tests should pass.
 
 ## Citation and Preprint
+
+If you use this artifact, please cite as:
+
+Author(haneri79@hanmail.net), *Super Speed Quantum Simulation — PWD Reproducibility Artifact (v1.1)*, Zenodo (2025).  
 - Preprint, Artifact DOI: [Zenodo DOI](https://doi.org/10.5281/zenodo.17059069)
   
 ---
