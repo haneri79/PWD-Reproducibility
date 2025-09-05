@@ -13,6 +13,16 @@ plus outputs, logs, manifest, and citation metadata.
 python -m pip install -U numpy pandas scipy
 python Judge_Extended.py --input bench.csv   --ts-input dyn.csv --ts-ref-method REF --ts-delta 0.03   --metal-input bands.csv --metal-window-ev 0.3 --metal-delta-ev 0.05   --sc-input sc.csv --sc-ref-method REF --sc-delta 0.03   --fit-scaling --predict-scale 2 4 8 16 32   --out verdict.json --markdown summary.md
 ```
+## Safe-run (OS/Colab/Windows 공통)
+
+- 실행은 OS/셸 의존 명령 대신 `tools/runner.py`가 처리합니다.  
+  → **타임아웃**, **자식 프로세스 포함 피크 RAM**, `shell=False` 안전 실행.
+- 리눅스/Colab:
+  ```bash
+  bash hero/HS1_softCoulomb_3D/run_base.sh
+  bash hero/HS1_softCoulomb_3D/run_pwd.sh
+  python hero/HS1_softCoulomb_3D/collect.py
+  python tools/verify_pwd.py --input hero/HS1_softCoulomb_3D/bench_hero.csv --bootstrap 200
 
 - If `--input` is omitted, the script **auto-switches to selftest** (no error exit).
 - In notebooks/Colab, any `-f kernel.json` is **ignored automatically**.
