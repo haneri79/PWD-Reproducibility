@@ -2,6 +2,11 @@ This repository contains the reproducibility artifact for Phase Wave Determinism
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17059069.svg)](https://doi.org/10.5281/zenodo.17059069)
 
+# PWD Quantum Simulation
+
+🚀 **New!** We just opened a community [Discussion board](https://github.com/haneri79/hundredsx-speed-quantsim-pwd/discussions/1).  
+Join the conversation, share your run results, and help us improve reproducibility!
+
 # PWD Reproducibility Artifact (v1.1)
 
 This Zenodo bundle contains a **single-file judge** and **minimal data** to reproduce the benchmark, plus outputs, logs, manifest, and citation metadata.
